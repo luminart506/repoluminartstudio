@@ -9,7 +9,7 @@ Instruções para a adição no gestor:
     <li>Clicar em "Adicionar fonte"</li>
     <li>O endereço para a fonte é <code>https://tinyurl.com/repoluminart</code> (Dar o nome de "repoluminart").</li>
     <li>Ir para "Addons"</li>
-    <li>Em Addons, instalar de um ficheiro zip. Quando perguntar pela localização, selecionar "luminart-vip", e instalar <a href="repository.repoluminartstudio-0.0.3.zip">repository.repoluminartstudio-0.0.3.zip</a>.</li>
+    <li>Em Addons, instalar de um ficheiro zip. Quando perguntar pela localização, selecionar "repoluminart", e instalar <a href="repository.repoluminartstudio-0.0.3.zip">repository.repoluminartstudio-0.0.3.zip</a>.</li>
     -
     <li>Repositório Instalado!</li>
     
