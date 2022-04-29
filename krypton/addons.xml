@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.luminartstudio.krypton"
        name="[COLOR orange][B]LUMINART KRP[/B][/COLOR]"
-       version="0.0.2"
+       version="0.0.3"
        provider-name="[COLOR white][B]JOHN DOE[/B][/COLOR]">  <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.beautifulsoup" version="3.2.1"/>
@@ -52,11 +52,14 @@
   </extension>
   <extension point="xbmc.addon.metadata">
     <summary>SUA CONTRIBUIÇÃO INCENTIVA NOSSO TRABALHO</summary>
-    <description lang="en">ACESSO MÚLTIPLO - FREE E VIP AGRADECEMOS SUA CONTRIBUIÇÃO. NOSSO CONTATO: WhatsApp (48) 99194-1409  </description>
+    <description lang="en">ACESSO ACESSO MULTI USO
+AGRADECEMOS SUA CONTRIBUIÇÃO.
+NOSSO CONTATO : 
+WhatsApp (48) 99194-1409  </description>
     <disclaimer lang="en">O LUMINART STUDIO É APENAS UM INDEXADOR DE LINKS COLETADOS NA WEB E ORGANIZADOS PARA USO RECREATIVO,SEM FINS COMERCIAIS 
 NÃO ARMAZENAMOS ARQUIVOS, OU SOMOS RESPONSÁVEIS PELOS LINKS UTILIZADOS.</disclaimer>
 	<news>
-VERSÃO - 001-31-04-22</news>
+VERSÃO - 003-28-04-22</news>
     <platform>all</platform>
 <assets>
        <icon>icon.png</icon>
