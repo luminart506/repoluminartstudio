@@ -34,7 +34,7 @@
 
 <addon id="plugin.video.luminartstudio.krypton"
        name="[COLOR orange][B]LUMINART KRP[/B][/COLOR]"
-       version="0.0.6"
+       version="0.0.7"
        provider-name="[COLOR white][B]JOHN DOE[/B][/COLOR]">  <requires>
     <import addon="xbmc.python" version="2.1.0"/>
     <import addon="script.module.six" />
