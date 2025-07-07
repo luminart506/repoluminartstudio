@@ -1,45 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="repository.repoluminartstudio" name="REPOSITÓRIO LUMINART STUDIO" version="0.0.3" provider-name="luminart506">
-    <extension point="xbmc.addon.repository" name="REPOSITÓRIO LUMINART STUDIO">
-        <dir>
-            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
-        </dir>
-        <dir minversion="17.0.0" maxversion="18.9.0">
-			<info compressed="false">https://raw.githubusercontent.com/luminart506/repoluminartstudio/main/krypton/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/luminart506/repoluminartstudio/main/krypton/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/luminart506/repoluminartstudio/main/krypton/</datadir>
-			<hashes>false</hashes>
-        </dir>
-  	    <dir minversion="18.9.1">
-			<info compressed="false">https://raw.githubusercontent.com/luminart506/repoluminartstudio/main/matrix/addons.xml</info>
-			<checksum>https://raw.githubusercontent.com/luminart506/repoluminartstudio/main/matrix/addons.xml.md5</checksum>
-			<datadir zip="true">https://raw.githubusercontent.com/luminart506/repoluminartstudio/main/matrix/</datadir>
-			<hashes>false</hashes>
-        </dir>
+<addon id="plugin.video.f4mTester" version="4.0.7" name="f4mTester" provider-name="Joel e Tiago">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.video.F4mProxy" version="4.0.7"/>
+        <import addon="inputstream.ffmpegdirect"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>LUMINART-VIP</summary>
-        <description>INSTALAÇÃO VIA LINK</description>
-        <disclaimer></disclaimer>
+        <summary lang="en">f4mTester</summary>
+        <description></description>
         <platform>all</platform>
         <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
+			<icon>icon.png</icon>
+		</assets>
     </extension>
 </addon>
 
 <addon id="plugin.video.luminartstudio.matrix" version="0.0.9" name="[COLOR orange][B]LUMINART MTX[/B][/COLOR]" provider-name="[COLOR white][B]JOHN DOE[/B][/COLOR]">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />         
         <import addon="script.module.requests"/>
         <import addon="script.module.simplejson"/>
-        <import addon="script.module.beautifulsoup4"/>
+	    <import addon="script.module.kodi-six" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -60,32 +45,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.58" provider-name="gujal">
-    <requires>
-        <!-- <import addon="xbmc.python" version="3.0.0" /> -->
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.certifi" />
-        <import addon="plugin.video.youtube" optional="true" />
-        <import addon="script.module.python.twitch" optional="true" />
-        <import addon="plugin.googledrive" optional="true" />
-    </requires>
-    <extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-        <summary lang="es_ES">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-        <description lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-        <disclaimer lang="en_GB">This script only resolves video content from legitimate file lockers without prejudice. If this script is being used by 3rd parties to resolve content that you feel infringes upon your Intellectual Property then please take your complaints to the actual website or developer linking to such content and not here. This script in no way searches for any content whatsoever.</disclaimer>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-    </extension>
-</addon>
-
-<addon id="plugin.video.resolvedor" name="Resolvedor" version="1.0.3" provider-name="Zoreu"> 
+<addon id="plugin.video.resolvedor" name="Resolvedor" version="1.0.3" provider-name="Zoreu">
     <requires>
 	    <import addon="script.module.simplejson" />
         <import addon="script.module.six" />
@@ -107,49 +67,6 @@
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
         </assets>
-    </extension>
-</addon>
-
-<addon id="script.video.F4mProxy" 
-	     name="F4mProxy" 
-	     version="4.0.7" 
-	     provider-name="Joel e Tiago">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0" />
-		<import addon="script.module.requests" />
-        <import addon="inputstream.ffmpegdirect" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-    
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Proxy for f4m</summary>
-		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-		<assets>
-			<icon>icon.png</icon>
-		</assets>
-	</extension>
-</addon>
-
-<addon id="plugin.video.f4mTester" version="4.0.7" name="f4mTester" provider-name="Joel e Tiago">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.video.F4mProxy" version="4.0.7"/>		
-        <import addon="inputstream.ffmpegdirect"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>  
-    <extension point="xbmc.addon.metadata">
-        <summary lang="en">f4mTester</summary>
-        <description></description>
-        <platform>all</platform>
-        <assets>
-			<icon>icon.png</icon>
-		</assets>
     </extension>
 </addon>
 
@@ -182,5 +99,86 @@
     - open playlist from youtube 1.0.2
 	</news>
 </extension>
+</addon>
+
+<addon id="repository.repoluminartstudio" name="REPOSITÓRIO LUMINART STUDIO" version="0.0.3" provider-name="luminart506">
+    <extension point="xbmc.addon.repository" name="REPOSITÓRIO LUMINART STUDIO">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/Gujal00/smrzips/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/master/zips/</datadir>
+        </dir>
+        <dir minversion="17.0.0" maxversion="18.9.0">
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/main/krypton/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/main/krypton/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/main/krypton/</datadir>
+			<hashes>false</hashes>
+        </dir>
+  	    <dir minversion="18.9.1">
+			<info compressed="false">https://raw.githubusercontent.com/Gujal00/smrzips/main/matrix/addons.xml</info>
+			<checksum>https://raw.githubusercontent.com/Gujal00/smrzips/main/matrix/addons.xml.md5</checksum>
+			<datadir zip="true">https://raw.githubusercontent.com/Gujal00/smrzips/main/matrix/</datadir>
+			<hashes>false</hashes>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>LUMINART-VIP</summary>
+        <description>INSTALAÇÃO VIA LINK</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.58" provider-name="gujal">
+    <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0" /> -->
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.certifi" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="plugin.googledrive" optional="true" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es_ES">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <description lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <disclaimer lang="en_GB">This script only resolves video content from legitimate file lockers without prejudice. If this script is being used by 3rd parties to resolve content that you feel infringes upon your Intellectual Property then please take your complaints to the actual website or developer linking to such content and not here. This script in no way searches for any content whatsoever.</disclaimer>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.video.F4mProxy"
+	     name="F4mProxy"
+	     version="4.0.7"
+	     provider-name="Joel e Tiago">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0" />
+		<import addon="script.module.requests" />
+        <import addon="inputstream.ffmpegdirect" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Proxy for f4m</summary>
+		<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+		<assets>
+			<icon>icon.png</icon>
+		</assets>
+	</extension>
 </addon>
 </addons>
